@@ -28,7 +28,7 @@ docker pull ghcr.io/GITHUB_USERNAME/bioemu-demo:latest
 ## Step 2: Deploying to Azure Web App
 See our [detailed deployment guide](DEPLOYMENT.md) for instructions on deploying this application to Azure Web App for Containers.
 
-> [!NOTE]
+> [!WARNING]
 > - First-time protein structure generation may be slow as the BioEmu model is downloaded from HuggingFace
 > - Larger proteins require more computation time
 > - For optimal performance, we recommend deploying with at least 4GB of RAM
