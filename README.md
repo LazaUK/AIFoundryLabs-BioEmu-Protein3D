@@ -1,19 +1,19 @@
 # Azure AI Foundry Labs: Gradio Web UI app to demo Biomolecular Emulator (BioEmu)
-This application provides a user-friendly Web interface for interacting with the [BioEmu](https://github.com/microsoft/bioemu) protein structure prediction model.
+This demo app provides a user-friendly Web interface for interacting with the [BioEmu](https://github.com/microsoft/bioemu) protein structure prediction model.
 
-With this demo, you can:
-- Input protein sequences in plain text or FASTA format
-- Visualise generated protein structures in an interactive 3D viewer
-- Download generated protein structures
+With this app, you can:
+- Input protein sequences in plain text or FASTA format,
+- Visualise generated protein structures in an interactive 3D viewer,
+- Download generated protein structures.
 
 ## Table of contents:
-- [Step 1: Pulling Companion Docker Image]()
-- [Step 2: Deploying to Azure Web App]()
-- [Step 3: User Experience - Gradio UI]()
+- [Part 1: Local Use of Companion Docker Image]()
+- [Part 2: Cloud Deployment to Azure Web App]()
+- [Part 3: User Experience - Gradio UI]()
 - [Demo video on YouTube]()
 - [Acknowledgments and Citation]()
 
-## Step 1: Pulling Companion Docker Image
+## Part 1: Local Use of Companion Docker Image
 This repo comes with a pre-built Docker image, available at: `ghcr.io/lazauk/bioemu-webapp:latest`.
 
 To pull the image locally, use the Docker command below. Alternatively, if you are deploying to an Azure Web app, skip this and move to Step 2.
@@ -21,7 +21,7 @@ To pull the image locally, use the Docker command below. Alternatively, if you a
 docker pull ghcr.io/lazauk/bioemu-webapp:latest
 ```
 
-## Step 2: Deploying to Azure Web App
+## Part 2: Cloud Deployment to Azure Web App
 See our [detailed deployment guide](DEPLOYMENT.md) for instructions on deploying this application to Azure Web App for Containers.
 
 > [!WARNING]
@@ -29,7 +29,7 @@ See our [detailed deployment guide](DEPLOYMENT.md) for instructions on deploying
 > - Larger proteins require more computation time
 > - For optimal performance, we recommend deploying with at least 4GB of RAM
 
-## Step 3: User Experience - Gradio UI
+## Part 3: User Experience - Gradio UI
 1. Enter a protein sequence or choose from sample sequences
 2. Set the number of structures to generate and other parameters
 3. Click "Generate Structures"
