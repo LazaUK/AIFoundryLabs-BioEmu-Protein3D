@@ -11,18 +11,14 @@ With this demo, you can:
 - [Step 2: Deploying to Azure Web App]()
 - [Step 3: User Experience - Gradio UI]()
 - [Demo video on YouTube]()
+- [Acknowledgments and Citation]()
 
 ## Step 1: Pulling Companion Docker Image
-This repository is set up to publish Docker images to GitHub Container Registry. The pre-built image is available at:
+This repo comes with a pre-built Docker image, available at: `ghcr.io/lazauk/bioemu-webapp:latest`.
 
-```
-ghcr.io/GITHUB_USERNAME/bioemu-demo:latest
-```
-
-To pull the image:
-
-```bash
-docker pull ghcr.io/GITHUB_USERNAME/bioemu-demo:latest
+To pull the image locally, use the Docker command below. Alternatively, if you are deploying to an Azure Web app, skip this and move to Step 2.
+``` bash
+docker pull ghcr.io/lazauk/bioemu-webapp:latest
 ```
 
 ## Step 2: Deploying to Azure Web App
@@ -48,7 +44,7 @@ Visit our demo application at [https://bioemu-app-service.azurewebsites.net](htt
 - [Gradio](https://gradio.app/) - The web UI framework
 
 If you use this demo or the AI model itself, please cite the original BioEmu paper of Microsoft Research team:
-```bibtex
+``` bibtex
 @article {BioEmu2024,
     author = {Lewis, Sarah and Hempel, Tim and Jim{\'e}nez-Luna, Jos{\'e} and Gastegger, Michael and Xie, Yu and Foong, Andrew Y. K. and Satorras, Victor Garc{\'\i}a and Abdin, Osama and Veeling, Bastiaan S. and Zaporozhets, Iryna and Chen, Yaoyi and Yang, Soojung and Schneuing, Arne and Nigam, Jigyasa and Barbero, Federico and Stimper, Vincent and Campbell, Andrew and Yim, Jason and Lienen, Marten and Shi, Yu and Zheng, Shuxin and Schulz, Hannes and Munir, Usman and Clementi, Cecilia and No{\'e}, Frank},
     title = {Scalable emulation of protein equilibrium ensembles with generative deep learning},
