@@ -1,5 +1,5 @@
 # Azure AI Foundry Labs: Gradio Web UI app to demo Biomolecular Emulator (BioEmu)
-This demo app provides a user-friendly Web interface for interacting with the [BioEmu](https://github.com/microsoft/bioemu) protein structure prediction AI model, released as open source by the Microsoft Research team.
+This demo app provides a user-friendly Web interface for interacting with the [BioEmu](https://github.com/microsoft/bioemu) protein structure prediction AI model, released as open source by the Microsoft Research team on [Azure AI Foundry Labs](https://ai.azure.com/labs).
 
 With this app, you can:
 - Input protein sequences in plain text or FASTA format,
