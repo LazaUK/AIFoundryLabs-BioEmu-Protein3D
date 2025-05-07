@@ -37,11 +37,11 @@ docker run -p 7860:7860 ghcr.io/lazauk/bioemu-webapp:latest
 
 ## Part 2: Cloud Deployment to Azure Web App
 1. Create a new Azure Web App and set the source container to:
-  - `Image Source`: Other container registries
-  - `Access type`: Public
-  - `Registry server URL`: https://ghcr.io
-  - `Image and tag`: lazauk/bioemu-webapp:latest
-  - `Port`: 7860
+    - `Image Source`: Other container registries
+    - `Access type`: Public
+    - `Registry server URL`: https://ghcr.io
+    - `Image and tag`: lazauk/bioemu-webapp:latest
+    - `Port`: 7860
 ![Web App - Container Config](images/BioEmu_WebApp_Config.png)
 2. Because of the size of the Docker container, it may take a few minutes to pull the image during initial setup. You can verify the deployment status in *Deployment -> Deployment Center -> Logs* settings of your Azure Web app as shown below:
 ![Web App - Container Deploy](images/BioEmu_WebApp_Deploy.png)
