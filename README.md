@@ -10,8 +10,8 @@ With this app, you can:
   <img src="images/BioEmu_Protein3D_Animated.gif" style="width: 70%; max-width: 800px; min-width: 300px;">
 </p>
 
-> [!WARNING]
-> For optimal performance, I'd recommend deploying on a host with at least 32 GB of RAM.
+> [!NOTE]
+> Provided companion .
 
 ## Table of contents:
 - [Part 1: Local Use of Companion Docker Image]()
@@ -45,21 +45,24 @@ docker run -p 7860:7860 ghcr.io/lazauk/bioemu-webapp:latest
 2. Because of the size of the Docker container, it may take few minutes to pull the image during initial setup. You can verify the deployment status in *Deployment -> Deployment Stats -> Logs* settings of your Azure Web app as shown below:
 ![Web App - Container Deploy](images/BioEmu_WebApp_Deploy.png)
 
+> [!WARNING]
+> For optimal performance, select an App Service Plan with at least 32GB of RAM.
+
 ## Part 3: User Experience - Gradio UI
-1. Enter a protein sequence or choose from sample sequences
-2. Set the number of structures to generate and other parameters
-3. Click "Generate Structures"
-4. Explore the 3D visualizations and analysis
-5. Download the resulting structures if desired
+1. Enter a protein sequence or choose from sample sequences;
+2. Set the number of structures to generate;
+3. Click "Generate Structures";
+4. Explore the 3D visualizations and analysis;
+5. Download the resulting structures if desired.
 
 ## Demo video on YouTube
-Visit our demo application at [https://bioemu-app-service.azurewebsites.net](https://bioemu-app-service.azurewebsites.net)
+You can see the solution action on the following [YouTube video](https://myvideo).
 
 ## Acknowledgments and Citation
-- [Microsoft BioEmu](https://github.com/microsoft/bioemu) - The core AI model
-- [Gradio](https://gradio.app/) - The web UI framework
+- [Microsoft BioEmu](https://github.com/microsoft/bioemu) - inference code and AI model weights;
+- [Gradio](https://gradio.app/) - the web UI framework.
 
-If you use this demo or the AI model itself, please cite the original BioEmu paper of Microsoft Research team:
+If you use AI model in your solutions, please cite the original BioEmu paper of Microsoft Research team:
 ``` bibtex
 @article {BioEmu2024,
     author = {Lewis, Sarah and Hempel, Tim and Jim{\'e}nez-Luna, Jos{\'e} and Gastegger, Michael and Xie, Yu and Foong, Andrew Y. K. and Satorras, Victor Garc{\'\i}a and Abdin, Osama and Veeling, Bastiaan S. and Zaporozhets, Iryna and Chen, Yaoyi and Yang, Soojung and Schneuing, Arne and Nigam, Jigyasa and Barbero, Federico and Stimper, Vincent and Campbell, Andrew and Yim, Jason and Lienen, Marten and Shi, Yu and Zheng, Shuxin and Schulz, Hannes and Munir, Usman and Clementi, Cecilia and No{\'e}, Frank},
