@@ -14,9 +14,6 @@ With this app, you can:
 - [Acknowledgments and Citation]()
 
 ## Part 1: Local Use of Companion Docker Image
-> [!NOTE]
-> This repo comes with a pre-built Docker image, available at: `ghcr.io/lazauk/bioemu-webapp:latest`.
-
 1. To pull the image locally, use the Docker command below. Alternatively, if you are deploying to an Azure Web app, skip this and move to Part 2.
 ``` PowerShell
 docker pull ghcr.io/lazauk/bioemu-webapp:latest
