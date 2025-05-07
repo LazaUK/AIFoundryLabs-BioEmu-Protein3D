@@ -1,5 +1,5 @@
-# Azure AI Foundry Labs: Gradio Web UI app to demo Biomolecular Emulator (BioEmu)
-This demo app provides a user-friendly Web interface for predicting 3D protein structures with the [BioEmu](https://github.com/microsoft/bioemu) AI model, released as open source by the Microsoft Research team on [Azure AI Foundry Labs](https://ai.azure.com/labs).
+# Azure AI Foundry Labs: Gradio Web UI app to demo BioEmu (Biomolecular Emulator)
+This demo app provides a user-friendly Web UI wrapper for predicting 3D protein structures with the [BioEmu](https://github.com/microsoft/bioemu) AI model, released as open source by the Microsoft Research team on [Azure AI Foundry Labs](https://ai.azure.com/labs).
 
 With this app, you can:
 - Input protein sequences in plain text or FASTA format,
@@ -16,10 +16,15 @@ With this app, you can:
 ## Part 1: Local Use of Companion Docker Image
 This repo comes with a pre-built Docker image, available at: `ghcr.io/lazauk/bioemu-webapp:latest`.
 
-To pull the image locally, use the Docker command below. Alternatively, if you are deploying to an Azure Web app, skip this and move to Step 2.
-``` bash
+1. To pull the image locally, use the Docker command below. Alternatively, if you are deploying to an Azure Web app, skip this and move to Part 2.
+``` PowerShell
 docker pull ghcr.io/lazauk/bioemu-webapp:latest
 ```
+2. You can start the Docker container with the following command:
+``` PowerSehll
+docker run -p 7860:7860 ghcr.io/lazauk/bioemu-webapp:latest
+```
+3. The Web app can now be accessed at http://127.0.0.1:7860.
 
 ## Part 2: Cloud Deployment to Azure Web App
 See our [detailed deployment guide](DEPLOYMENT.md) for instructions on deploying this application to Azure Web App for Containers.
