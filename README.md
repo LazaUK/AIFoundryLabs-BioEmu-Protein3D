@@ -53,7 +53,7 @@ docker run -p 7860:7860 ghcr.io/lazauk/bioemu-webapp:latest
 1. Enter a protein sequence or choose from sample sequences;
 2. Set the number of protein structures to predict;
 3. Click "Generate Structures";
-4. Examine the 3D protein structures in the viewer;
+4. Examine the first 3D protein structure in the viewer;
 5. Download the resulting structures if required.
 
 ## Demo video on YouTube
@@ -63,7 +63,7 @@ You can see the solution in action on the following [YouTube video](https://yout
 - [Microsoft BioEmu](https://github.com/microsoft/bioemu) - inference code and AI model weights;
 - [Gradio](https://gradio.app/) - the Web UI framework.
 
-If you use the AI model in your solutions, please cite the original BioEmu paper by the Microsoft Research team:
+The original BioEmu paper by the Microsoft Research team:
 ``` bibtex
 @article {BioEmu2024,
     author = {Lewis, Sarah and Hempel, Tim and Jim{\'e}nez-Luna, Jos{\'e} and Gastegger, Michael and Xie, Yu and Foong, Andrew Y. K. and Satorras, Victor Garc{\'\i}a and Abdin, Osama and Veeling, Bastiaan S. and Zaporozhets, Iryna and Chen, Yaoyi and Yang, Soojung and Schneuing, Arne and Nigam, Jigyasa and Barbero, Federico and Stimper, Vincent and Campbell, Andrew and Yim, Jason and Lienen, Marten and Shi, Yu and Zheng, Shuxin and Schulz, Hannes and Munir, Usman and Clementi, Cecilia and No{\'e}, Frank},
