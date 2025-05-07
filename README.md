@@ -6,9 +6,9 @@ With this app, you can:
 - Visualise generated protein structures in an interactive 3D viewer,
 - Download generated protein structures.
 
-<div style="text-align: center;">
+<p align="center">
   <img src="images/BioEmu_Protein3D_Animated.gif" width="400" height="300">
-</div>
+</p>
 
 ## Table of contents:
 - [Part 1: Local Use of Companion Docker Image]()
