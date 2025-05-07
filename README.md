@@ -57,7 +57,7 @@ docker run -p 7860:7860 ghcr.io/lazauk/bioemu-webapp:latest
 5. Download the resulting structures if required.
 
 ## Demo video on YouTube
-You can see the solution in action on the following [YouTube video](https://myvideo).
+You can see the solution in action on the following [YouTube video](https://youtu.be/k2yeQkbmGsg).
 
 ## Acknowledgments and Citation
 - [Microsoft BioEmu](https://github.com/microsoft/bioemu) - inference code and AI model weights;
