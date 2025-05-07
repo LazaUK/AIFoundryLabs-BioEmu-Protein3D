@@ -12,7 +12,7 @@ With this app, you can:
 </p>
 
 > [!NOTE]
-> Provided companion Docker image for local use or cloud deployment.
+> Provided companion Docker image is optimised for **CPU** use and doesn't require **GPU** compute.
 
 ## Table of contents:
 - [Part 1: Local Use of Companion Docker Image](#part-1-local-use-of-companion-docker-image)
