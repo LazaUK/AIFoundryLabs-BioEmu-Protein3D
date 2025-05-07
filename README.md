@@ -1,4 +1,5 @@
 # Gradio Web UI app to predict 3D protein structures with BioEmu (Biomolecular Emulator)
+
 This demo app provides a user-friendly Web UI wrapper for predicting 3D protein structures with the [BioEmu](https://github.com/microsoft/bioemu) AI model, released as open source by the Microsoft Research team on [Azure AI Foundry Labs](https://ai.azure.com/labs).
 
 With this app, you can:
@@ -11,14 +12,14 @@ With this app, you can:
 </p>
 
 > [!NOTE]
-> Provided companion .
+> Provided companion Docker image for local use or cloud deployment.
 
 ## Table of contents:
-- [Part 1: Local Use of Companion Docker Image]()
-- [Part 2: Cloud Deployment to Azure Web App]()
-- [Part 3: User Experience - Gradio UI]()
-- [Demo video on YouTube]()
-- [Acknowledgments and Citation]()
+- [Part 1: Local Use of Companion Docker Image](#part-1-local-use-of-companion-docker-image)
+- [Part 2: Cloud Deployment to Azure Web App](#part-2-cloud-deployment-to-azure-web-app)
+- [Part 3: User Experience - Gradio UI](#part-3-user-experience---gradio-ui)
+- [Demo video on YouTube](#demo-video-on-youtube)
+- [Acknowledgments and Citation](#acknowledgments-and-citation)
 
 ## Part 1: Local Use of Companion Docker Image
 1. To pull the image locally, use the Docker command below. Alternatively, if you are deploying to an Azure Web app, skip this and move to Part 2.
@@ -42,7 +43,7 @@ docker run -p 7860:7860 ghcr.io/lazauk/bioemu-webapp:latest
     - `Image and tag`: lazauk/bioemu-webapp:latest
     - `Port`: 7860
 ![Web App - Container Config](images/BioEmu_WebApp_Config.png)
-2. Because of the size of the Docker container, it may take few minutes to pull the image during initial setup. You can verify the deployment status in *Deployment -> Deployment Stats -> Logs* settings of your Azure Web app as shown below:
+2. Because of the size of the Docker container, it may take a few minutes to pull the image during initial setup. You can verify the deployment status in *Deployment -> Deployment Center -> Logs* settings of your Azure Web app as shown below:
 ![Web App - Container Deploy](images/BioEmu_WebApp_Deploy.png)
 
 > [!WARNING]
@@ -50,19 +51,19 @@ docker run -p 7860:7860 ghcr.io/lazauk/bioemu-webapp:latest
 
 ## Part 3: User Experience - Gradio UI
 1. Enter a protein sequence or choose from sample sequences;
-2. Set the number of structures to generate;
+2. Set the number of protein structures to predict;
 3. Click "Generate Structures";
-4. Explore the 3D visualizations and analysis;
-5. Download the resulting structures if desired.
+4. Examine the 3D protein structures in the viewer;
+5. Download the resulting structures if required.
 
 ## Demo video on YouTube
-You can see the solution action on the following [YouTube video](https://myvideo).
+You can see the solution in action on the following [YouTube video](https://myvideo).
 
 ## Acknowledgments and Citation
 - [Microsoft BioEmu](https://github.com/microsoft/bioemu) - inference code and AI model weights;
-- [Gradio](https://gradio.app/) - the web UI framework.
+- [Gradio](https://gradio.app/) - the Web UI framework.
 
-If you use AI model in your solutions, please cite the original BioEmu paper of Microsoft Research team:
+If you use the AI model in your solutions, please cite the original BioEmu paper by the Microsoft Research team:
 ``` bibtex
 @article {BioEmu2024,
     author = {Lewis, Sarah and Hempel, Tim and Jim{\'e}nez-Luna, Jos{\'e} and Gastegger, Michael and Xie, Yu and Foong, Andrew Y. K. and Satorras, Victor Garc{\'\i}a and Abdin, Osama and Veeling, Bastiaan S. and Zaporozhets, Iryna and Chen, Yaoyi and Yang, Soojung and Schneuing, Arne and Nigam, Jigyasa and Barbero, Federico and Stimper, Vincent and Campbell, Andrew and Yim, Jason and Lienen, Marten and Shi, Yu and Zheng, Shuxin and Schulz, Hannes and Munir, Usman and Clementi, Cecilia and No{\'e}, Frank},
