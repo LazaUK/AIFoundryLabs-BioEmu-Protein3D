@@ -7,7 +7,7 @@ With this app, you can:
 - Download generated protein structures.
 
 <div style="text-align: center;">
-  <img src="images/BioEmu_Protein3D_Animated.gif" width="200" height="150">
+  <img src="images/BioEmu_Protein3D_Animated.gif" width="900" height="600">
 </div>
 
 ## Table of contents:
