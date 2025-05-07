@@ -10,6 +10,9 @@ With this app, you can:
   <img src="images/BioEmu_Protein3D_Animated.gif" style="width: 70%; max-width: 800px; min-width: 300px;">
 </p>
 
+> [!WARNING]
+> For optimal performance, I'd recommend deploying on a host with at least 32 GB of RAM.
+
 ## Table of contents:
 - [Part 1: Local Use of Companion Docker Image]()
 - [Part 2: Cloud Deployment to Azure Web App]()
@@ -28,13 +31,20 @@ docker run -p 7860:7860 ghcr.io/lazauk/bioemu-webapp:latest
 ```
 3. The Web app can now be accessed at http://127.0.0.1:7860.
 
+> [!NOTE]
+> Your machine should support the Docker Engine. On Windows, consider installing Docker Desktop.
+
 ## Part 2: Cloud Deployment to Azure Web App
 See our [detailed deployment guide](DEPLOYMENT.md) for instructions on deploying this application to Azure Web App for Containers.
-
-> [!WARNING]
-> - First-time protein structure generation may be slow as the BioEmu model is downloaded from HuggingFace
-> - Larger proteins require more computation time
-> - For optimal performance, we recommend deploying with at least 4GB of RAM
+1. Create a new Azure Web App and set the source container to:
+    * `_Image Source_`: Other container registries
+    * `_Access type_`: Public
+    * `_Registry server URL_`: https://ghcr.io
+    * `_Image and tag_`: lazauk/bioemu-webapp:latest
+    * `_Port_`: 7860
+![Web App - Container Config](images/BioEmu_WebApp_Config.png)
+2. Because of the size of the Docker container, it may take few minutes to pull the image during initial setup. You can verify the deployment status in Deployment -> Deployment Stats - Logs settings of your Azure Web app as shown below:
+![Web App - Container Deploy](images/BioEmu_WebApp_Deploy.png)
 
 ## Part 3: User Experience - Gradio UI
 1. Enter a protein sequence or choose from sample sequences
