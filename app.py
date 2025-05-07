@@ -7,7 +7,7 @@ import shutil
 import glob
 from pathlib import Path
 import logging
-import html  # For escaping HTML for iframe srcdoc
+import html
 
 # Attempt to import BioEmu and handle potential errors
 try:
@@ -16,14 +16,14 @@ except ImportError as e:
     logging.exception("Failed to import bioemu.sample - Please ensure BioEmu is installed correctly.")
     print(f"Error importing bioemu: {e}")
     print("Please ensure the bioemu package and its dependencies are installed correctly in your environment.")
-    raise  # Stop execution if bioemu is essential
+    raise  # Stop execution as bioemu is essential
 
 # Import other necessary libraries
 import matplotlib.pyplot as plt
 from Bio.PDB import PDBParser, PDBIO
 from Bio.PDB.PDBExceptions import PDBConstructionWarning
 import warnings
-import py3Dmol # For 3D visualization
+import py3Dmol
 import json
 import numpy as np
 import traceback
@@ -35,9 +35,9 @@ warnings.filterwarnings("ignore", category=PDBConstructionWarning)
 class BioEmuDemo:
     """Handles BioEmu execution and temporary file management."""
     def __init__(self):
-        """Initialize the BioEmu demo interface."""
+        """Initialise the BioEmu demo interface."""
         self.temp_dirs = []
-        logging.info("BioEmuDemo initialized.")
+        logging.info("BioEmuDemo initialised.")
 
     def __del__(self):
         """Clean up temporary directories on exit."""
