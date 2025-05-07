@@ -1,4 +1,4 @@
-# Azure AI Foundry Labs: Gradio Web UI app to demo BioEmu (Biomolecular Emulator)
+# Azure AI Foundry Labs: Gradio Web UI app to predict 3D protein structures with BioEmu (Biomolecular Emulator)
 This demo app provides a user-friendly Web UI wrapper for predicting 3D protein structures with the [BioEmu](https://github.com/microsoft/bioemu) AI model, released as open source by the Microsoft Research team on [Azure AI Foundry Labs](https://ai.azure.com/labs).
 
 With this app, you can:
