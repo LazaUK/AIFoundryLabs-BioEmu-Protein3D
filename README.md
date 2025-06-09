@@ -14,11 +14,11 @@ With this app, you can:
 > [!NOTE]
 > Provided companion Docker image is optimised for **CPU** use and doesn't require **GPU** compute.
 
-## Table of contents:
+## 📑 Table of contents:
 - [Part 1: Local Use of Companion Docker Image](#part-1-local-use-of-companion-docker-image)
 - [Part 2: Cloud Deployment to Azure Web App](#part-2-cloud-deployment-to-azure-web-app)
 - [Part 3: User Experience - Gradio UI](#part-3-user-experience---gradio-ui)
-- [Demo video on YouTube](#demo-video-on-youtube)
+- [Demo videos on YouTube](#demo-videos-on-youtube)
 - [Acknowledgments and Citation](#acknowledgments-and-citation)
 
 ## Part 1: Local Use of Companion Docker Image
@@ -56,10 +56,9 @@ docker run -p 7860:7860 ghcr.io/lazauk/bioemu-webapp:latest
 4. Examine the first 3D protein structure in the viewer;
 5. Download the resulting structures if required.
 
-## Demo video on YouTube
-You can see the solution in action on the following [YouTube video](https://youtu.be/k2yeQkbmGsg).
-
-You may also listen to the audio podcast, ["3D Protein Structures with BioEmu: Beyond the Code"](https://youtu.be/szketeLILdc), where we explore the content of the provided Web UI wrapper in a beginner-friendly way.
+## Demo videos on YouTube
+- 🎥 You can see the solution in action on the following ["Predicting 3D Protein Structures with BioEmu AI"](https://youtu.be/k2yeQkbmGsg) YouTube video.
+- 🎙️ You may also listen to the audio podcast, ["3D Protein Structures with BioEmu: Behind the Code"](https://youtu.be/szketeLILdc), where we review the mechanics of the provided Web UI wrapper in a beginner-friendly way.
 
 ## Acknowledgments and Citation
 - [Microsoft BioEmu](https://github.com/microsoft/bioemu) - inference code and AI model weights;
