@@ -59,6 +59,8 @@ docker run -p 7860:7860 ghcr.io/lazauk/bioemu-webapp:latest
 ## Demo video on YouTube
 You can see the solution in action on the following [YouTube video](https://youtu.be/k2yeQkbmGsg).
 
+You may also listen to the audio podcast, ["3D Protein Structures with BioEmu: Beyond the Code"](https://youtu.be/szketeLILdc), where we explore the content of the provided Web UI wrapper in a beginner-friendly way.
+
 ## Acknowledgments and Citation
 - [Microsoft BioEmu](https://github.com/microsoft/bioemu) - inference code and AI model weights;
 - [Gradio](https://gradio.app/) - the Web UI framework.
