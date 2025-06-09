@@ -57,8 +57,9 @@ docker run -p 7860:7860 ghcr.io/lazauk/bioemu-webapp:latest
 5. Download the resulting structures if required.
 
 ## Demo videos on YouTube
-- 🎥 You can see the solution in action on the following ["Predicting 3D Protein Structures with BioEmu AI"](https://youtu.be/k2yeQkbmGsg) YouTube video.
-- 🎙️ You may also listen to the audio podcast, ["3D Protein Structures with BioEmu: Behind the Code"](https://youtu.be/szketeLILdc), where we review the mechanics of the provided Web UI wrapper in a beginner-friendly way.
+🎥 You can see the solution in action on the following ["Predicting 3D Protein Structures with BioEmu AI"](https://youtu.be/k2yeQkbmGsg) YouTube video.
+
+🎙️ You may also listen to the audio podcast, ["3D Protein Structures with BioEmu: Behind the Code"](https://youtu.be/szketeLILdc), where we review the mechanics of the provided Web UI wrapper in a beginner-friendly way.
 
 ## Acknowledgments and Citation
 - [Microsoft BioEmu](https://github.com/microsoft/bioemu) - inference code and AI model weights;
